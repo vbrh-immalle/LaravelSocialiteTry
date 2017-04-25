@@ -17,3 +17,6 @@ Route::get('/', function () {
 
 Route::get('login/github', 'OAuth\GitHubLoginController@redirectToProvider');
 Route::get('login/github/callback', 'OAuth\GitHubLoginController@handleProviderCallback');
+
+Route::get('login/google', 'OAuth\GoogleLoginController@redirectToProvider');
+Route::get('login/google/callback', 'OAuth\GoogleLoginController@handleProviderCallback');
