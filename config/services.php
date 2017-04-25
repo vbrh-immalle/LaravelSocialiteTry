@@ -35,4 +35,10 @@ return [
         'secret' => env('STRIPE_SECRET'),
     ],
 
+    'github' => [
+        'client_id' => env('GITHUB_APPID'),
+        'client_secret' => env('GITHUB_APPSECRET'),
+        'redirect' => env('GITHUB_CALLBACKURL'),
+    ],
+
 ];
